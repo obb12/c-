@@ -17,9 +17,10 @@
 //myApp.directive('myDirective', function() {});
 //myApp.factory('myService', function() {});
 
-function MyCtrl($scope) {
-    $scope.name = 'Superhero';
-}
+
+     myApp.controller('MyCtrl', ['$scope', function($scope) {
+   $scope.name = 'Superhero';
+}]);
       
     </script>
   </body>
