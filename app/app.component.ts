@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+
 const TODOS  =
 [
   {
@@ -1205,6 +1206,7 @@ const TODOS  =
 @Component({
   selector: 'my-app',
   templateUrl: 'app/app.component.html',
+  pipes: [ pipe ]
 })
 export class AppComponent {
   todos = TODOS;
