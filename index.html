@@ -3,23 +3,24 @@
   <head>
     <meta charset="UTF-8" />
     <title>Hello React!</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.27/vue.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
    
   </head>
   <body onload="myFunction()">
-    <div id="app">
-      {{ message }}
-
-    </div>
+  <div ng-controller="MyCtrl">
+  Hello, {{name}}!
+</div>
     <script>
       function myFunction() {
 
-     new Vue({
-  el: '#app',
-  data: {
-    message: 'Hello Vue.js!'
-  }
-})
+    var myApp = angular.module('myApp',[]);
+
+//myApp.directive('myDirective', function() {});
+//myApp.factory('myService', function() {});
+
+function MyCtrl($scope) {
+    $scope.name = 'Superhero';
+}
       }
     </script>
   </body>
