@@ -1205,10 +1205,10 @@ const TODOS  =
 ];
 @Component({
   selector: 'my-app',
-  templateUrl: 'app/app.component.html',
-  pipes: [ pipe ]
+  templateUrl: 'app/app.component.html'
 })
 export class AppComponent {
   todos = TODOS;
+  
 
 }
